@@ -1,0 +1,57 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.manifest
+*.spec
+
+# ---- Virtualenv ----
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+*.whl
+
+# ---- macOS ----
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ---- Logs ----
+*.log
+*.tmp
+*.swp
+
+# ---- Buildozer / Kivy ----
+.buildozer/
+bin/
+*.apk
+*.aab
+*.keystore
+.keystore
+.gradle/
+local.properties
+*.iml
+
+# ---- Android Studio (si algún día lo usas) ----
+.idea/
+*.iml
+.gradle/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---- Bases de datos ----
+*.db
+*.sqlite3
+
+# ---- Archivos de configuración privada ----
+*.env
+*.secret
