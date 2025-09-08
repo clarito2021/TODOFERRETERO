@@ -62,6 +62,7 @@ python main.py
 (requiere Docker o entorno de compilación Android configurado con Buildozer)
 
 buildozer -v android debug
+
 buildozer android deploy run
 
 📂 Estructura del proyecto
@@ -87,6 +88,7 @@ TODOFERRETERO/
 ├── requirements-dev.txt    # Dependencias para entorno local
 
 └── .gitignore
+
 
 👨‍💻 Autor
 
