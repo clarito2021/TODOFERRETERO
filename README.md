@@ -26,8 +26,6 @@ Ejemplo:
 
 
 
-
-
 🛠️ Tecnologías utilizadas
 
 Python 3.11.3
@@ -42,11 +40,15 @@ Buildozer (compilación a APK para Android)
 
 ⚙️ Instalación y uso
 1. Clonar el repositorio
+
 git clone git@github.com:clarito2021/TODOFERRETERO.git
+
 cd TODOFERRETERO
 
 2. Crear entorno virtual
+
 python3 -m venv .venv
+
 source .venv/bin/activate
 
 3. Instalar dependencias (modo desarrollo en Mac/Linux/Windows)
@@ -65,15 +67,25 @@ buildozer android deploy run
 📂 Estructura del proyecto
 TODOFERRETERO/
 ├── images/                 # Logo y recursos gráficos
+
 ├── bd_sqlite/              # Base de datos SQLite (local)
+
 ├── carrito.py              # Lógica de carrito de compras
+
 ├── historial.py            # Historial de pedidos
+
 ├── login.py                # Pantalla de login
+
 ├── main.py                 # Entrada principal de la app
+
 ├── pdf_pedido.py           # Generación de PDFs
+
 ├── resumen_cliente.py      # Resumen de cliente seleccionado
+
 ├── tomar_pedido.py         # Pantalla de toma de pedidos
+
 ├── requirements-dev.txt    # Dependencias para entorno local
+
 └── .gitignore
 
 👨‍💻 Autor
