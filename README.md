@@ -228,7 +228,9 @@ Contiene algunas screehshots generales de la app instalada en Android
 ## 👨‍💻 Autor
 
 Carlos Reyes Bustamante - Asistencia de Chat GPT (Chatcito)
+
 📧 <citizenlex2016@gmail.com>
+
 🌐 GitHub – clarito2021
 
 📜 Licencia
