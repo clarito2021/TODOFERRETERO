@@ -1,5 +1,7 @@
 <!-- markdownlint-disable-next-line MD041 -->
-![Logo TODOFERRETERO](images/logo-todo-ferretero.jpg)
+<p align="center">
+  <img src="images/logo-todo-ferretero.png" width="312">
+</p>
 
 # 🛠️ Proyecto TODOFERRETERO ANDROID
 
