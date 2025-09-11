@@ -121,7 +121,7 @@ en el Q.A:
 1. Clonar repositorio
 
     ```bash
-        git clone git@github.com:clarito2021/TODOFERRETERO.git
+        git clone git@github.com:creyesdeveloper/TODOFERRETERO.git
         cd TODOFERRETERO
     ```
 
@@ -263,11 +263,11 @@ Contiene un video de la aplicación funcionando en un dispositvo Android
 
 # 👨‍💻 Autor
 
-Carlos Reyes Bustamante - Asistencia de Chat GPT (Chatcito)
+Carlos Reyes Bustamante - Asistido por Chat GPT
 
 📧 <citizenlex2016@gmail.com>
 
-🌐 GitHub – clarito2021
+🌐 GitHub – creyesdeveloper
 
 📜 Licencia
 
