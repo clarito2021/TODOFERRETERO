@@ -1,21 +1,55 @@
-TODOFERRETERO 📱🔧
+<!-- markdownlint-disable-next-line MD041 -->
+![Logo TODOFERRETERO](images/logo-todo-ferretero.jpg)
 
-Aplicación móvil para la toma de pedidos offline, desarrollada en Python + Kivy, con almacenamiento en SQLite y generación de PDFs.
-Compilada con Buildozer para ejecutarse en Android (probada en Android 14 – ZTE Blade A55).
+# 🛠️ Proyecto TODOFERRETERO ANDROID
 
-🚀 Funcionalidades
+📌 Información General
+    - **Fecha de inicio generación de código**: 01/10/2025 13:30 hrs
+    - **Fecha de término**: 05/10/2025 14:00 hrs  
+    - **Lenguaje de programación**: Python 3.11.3  (.venv)
+    - **Editor utilizado**: Visual Studio Code  
+    - **Sistema operativo de desarrollo**: MacOS Sequoia 15.6.1 (con soporte para Linux/Windows)  
+    - **Base de datos**: SQLite (`todoferre.db`)  
+    - **Herramientas utilizadas**: DBeaver, CLI `sqlite3`  
+    - **Cantidad de archivos de código**: 7 archivos .py
 
-Login seguro con usuarios desde SQLite.
+---------------------------------------------------------------------------------------------------------------
 
-Tomar pedidos offline asociados a clientes.
+## 🛠️  Solicitudes Generales
 
-Historial de pedidos con búsqueda por nombre, RUT o número de orden.
+- Aplicación móvil para la toma de pedidos **offline**
+- La app debe trabajar con una base de datos **SQLite**
+- La app debe poder actualizar los pedidos cuando tenga disponible una conexión a la internet
+- desarrollada en **Python + Kivy**
+- con almacenamiento en **SQLite** que debe poder actualizar tablas desde donde se obtiene información de clientes y productos
+- generación de **PDFs** para el historial de las ordenes (tarea no. prioritaria)  
+- Compilada con **Buildozer** para ejecutarse en **Android** (probada en Android 14 – ZTE Blade A55).
 
-Generación de PDFs de pedidos (con ReportLab).
+---------------------------------------------------------------------------------------------------------------
 
-Orientación fija en Portrait en Android.
+## 🚀 Funcionalidades Desarrolladas y probadas
 
-Compatible con Scoped Storage (Android 11+).
+- Login seguro con usuarios desde SQLite.
+- Toma de pedidos **offline** asociados a clientes.  
+- **Busqueda de Clientes dinámica**, con criterio de "Nombre de Fantasía", "Nombre Real", "RUT"
+- Selección de precios (los precios son distintos dada la región), según **Criterio de Despacho**
+- **Historial de pedidos** con búsqueda por "nombre", "RUT" o "número de orden".
+- Carro de Compras (selector de productos para orden) con **Sesión Persistente**
+- Si no se completa la orden, **se mantiene una respaldo de la sesión de compras puede retomarse**
+- Se se completa la orden, se eliminan los registros de sesiones incomopletas
+- Generación de PDFs de pedidos (con **ReportLab**).
+- Orientación fija en **Portrait** en Android.  
+- Compatible con **Scoped Storage** (Android 11+).
+
+````
+Notas del Desarrollo: Se probaron los casos de uso básicos, no se ejecutó un proceso profundo de Q.A, al entregar
+la última compilación, se le informó a los solicitantes, este gran detalle, por lo tanto, si alguien retoma este proyecto
+debe considerar este proceso, puesto que hay tres etapas en el Q.A:
+
+        1. Q.A implícito en el desarrollo
+        2. Q.A ejecutado por un especialista en Q.A que prueba los casos de uso generales y los expande
+        3. UAT, User Acceptance Test, ejecutado por un usuario final supervisado por un especialista Q.A
+````
 
 📸 Capturas de pantalla
 
@@ -23,82 +57,180 @@ Compatible con Scoped Storage (Android 11+).
 
 Ejemplo:
 
+## 🚀 Funcionalidades NO Desarrolladas por cancelación del Proyecto
 
+- Sincronización de la tabla "orders" con un servicio On Line (Odoo)
+- Actualización de las tablas "cliente", "usuarios", "pricelist", "products", desde servicio On Line (Odoo)
+- Ajustes estéticos, dada la urgencia con la que se planteó el proyecto, se centró el desarrollo primero en funcionalidad
 
+---------------------------------------------------------------------------------------------------------------
 
-🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 
-Python 3.11.3
+-[Python 3.11.3](https://www.python.org/) (The official home of the Python Programming Language)
+-[Kivy](https://kivy.org) (interfaz gráfica y navegación entre pantallas, MIT License)  
+-[SQLite](https://sqlite.org/) (almacenamiento offline)  
+-[ReportLab](https://www.reportlab.com) (generación de PDFs)  
+-[Buildozer](https://buildozer.readthedocs.io/en/latest/) (compilación a APK para Android)
 
-Kivy (interfaz gráfica y navegación entre pantallas)
+- Es necesario usar un entorno virtual (`venv`):
 
-SQLite (almacenamiento offline)
+    ```bash
+        python3 -m venv .venv
+        source .venv/bin/activate   # macOS/Linux
+        .venv\Scripts\activate      # Windows
+    ```
 
-ReportLab (generación de PDFs)
+- Instalación de dependencias, se incluye lista de dependencias hasta el momento de la última compilación:
+  
+    ```bash
+        pip install -r requirements-dev.txt
+    ```
 
-Buildozer (compilación a APK para Android)
+---------------------------------------------------------------------------------------------------------------
 
-⚙️ Instalación y uso
-1. Clonar el repositorio
+## ⚙️ Manual de Compilación y Ejecución
 
-git clone git@github.com:clarito2021/TODOFERRETERO.git
+1. Clonar repositorio
 
-cd TODOFERRETERO
+    ```bash
+        git clone git@github.com:clarito2021/TODOFERRETERO.git
+        cd TODOFERRETERO
+    ```
 
 2. Crear entorno virtual
 
-python3 -m venv .venv
+    ```bash
+        python3 -m venv .venv
+        source .venv/bin/activate
+    ```
 
-source .venv/bin/activate
+3. Instalar dependencias
 
-3. Instalar dependencias (modo desarrollo en Mac/Linux/Windows)
-pip install -r requirements-dev.txt
+    ```bash
+        pip install -r requirements-dev.txt
+    ```
+
+    📦 Dependencias de Python (misma información contenida en requirements-dev.txt):
+
+         - bcrypt==4.3.0
+         - certifi==2025.8.3
+         - charset-normalizer==3.4.3
+         - docutils==0.22
+         - et_xmlfile==2.0.0
+         - idna==3.10
+         - Kivy==2.3.0
+         - Kivy-Garden==0.1.5
+         - numpy==2.3.2
+         - openpyxl==3.1.5
+         - pandas==2.3.2
+         - pillow==11.3.0
+         - pip==25.2
+         - Pygments==2.19.2
+         - python-dateutil==2.9.0.post0
+         - pytz==2025.2
+         - reportlab==4.4.3
+         - requests==2.32.5
+         - setuptools==80.9.0
+         - six==1.17.0
+         - tzdata==2025.2
+         - urllib3==2.5.0
 
 4. Ejecutar en desktop
-python main.py
 
-5. Compilar a Android APK
+    ```bash
+        python main.py
+    ```
 
-(requiere Docker o entorno de compilación Android configurado con Buildozer)
+5. Compilar APK Android con Buildozer
 
-buildozer -v android debug
+    ```bash
+        pip install buildozer
+        buildozer -v android debug
+        buildozer android deploy run
+    ```
 
-buildozer android deploy run
+📌 Requiere Docker o entorno Android SDK/NDK configurado.
 
-📂 Estructura del proyecto
-TODOFERRETERO/
-├── images/                 # Logo y recursos gráficos
+---------------------------------------------------------------------------------------------------------------
 
-├── bd_sqlite/              # Base de datos SQLite (local)
+## 📂 Estructura del proyecto
 
-├── carrito.py              # Lógica de carrito de compras
+        TODOFERRETERO/
+        ├── images/                     # Directorio con Logo y recursos gráficos
+        ├── bd_sqlite/                  # Directorio con Base de datos SQLite
+        ├── login.py                    # Pantalla de login
+        ├── carrito.py                  # Carrito de compras
+        ├── historial.py                # Historial de pedidos
+        ├── pdf_pedido.py               # Generación de PDFs
+        ├── resumen_cliente.py          # Resumen de cliente
+        ├── tomar_pedido.py             # Toma de pedidos
+        ├── tools/                      # Directorio con Scripts de análisis/diagramas
+        │   ├── generate_mermaid.py
+        │   ├── generate_drawio.py
+        │   └── analyze_sql.py
+        ├── docs/                       # Directorio con ocumentación y diagramas
+        │   ├── flow_login.drawio
+        │   ├── flow_carrito.drawio
+        │   ├── flow_historial.drawio
+        │   ├── flow_pdf_pedido.drawio
+        │   ├── flow_resumen_cliente.drawio
+        │   ├── flow_tomar_pedido.drawio
+        │   ├── sql_insights.md
+        │   └── screenshots/            # subdirectorio con Capturas de pantalla generales
+        ├── requirements-dev.txt        # Archivo .TXT con Dependencias
+        ├── buildozer.spec              # En este archivo, se dan la intrucciones para compilar el APK
+        └── main.py                     # Punto de entrada, archivo simple que llama a login.py
 
-├── historial.py            # Historial de pedidos
+---------------------------------------------------------------------------------------------------------------
 
-├── login.py                # Pantalla de login
+## 📊 Diagramas de Flujo
 
-├── main.py                 # Entrada principal de la app
+El el siguiente link, se puede acceder a todos los diagramas ---> [Diagramas de Flujo](FLOW_DOCS.md)
 
-├── pdf_pedido.py           # Generación de PDFs
+Ahí se ven los diagramas .drawio, png y una explicación de lo que hace cada módulo:
 
-├── resumen_cliente.py      # Resumen de cliente seleccionado
+          - Login
+          - Tomar pedido (tomar_pedido.py)
+          - Resumen Cliente (resumen_cliente.py)Carrito
+          - Historial (historial.py)
+          - PDF Pedido (pdf_pedido.py)
+          - Tomar Pedido (carrito.py)
 
-├── tomar_pedido.py         # Pantalla de toma de pedidos
+---------------------------------------------------------------------------------------------------------------
 
-├── requirements-dev.txt    # Dependencias para entorno local
+## 🛢️ Consultas SQL
 
-└── .gitignore
+El archivo docs/sql_insights.md ---> [Consultas SQL](SQL_DOCS.md)
 
+Contiene el detalle de todas las consultas SQL que se hacen en el código de la app, incluyendo:
 
-👨‍💻 Autor
+      - Tipo de operación (SELECT, INSERT, UPDATE, DELETE).
 
-Carlos Reyes Bustamante
-📧 citizenlex2016@gmail.com
+      - Tablas involucradas.
 
+      - Campos consultados o modificados.
+
+      - Condiciones y filtros.
+
+      - ORDER BY y LIMIT cuando corresponden.
+
+---------------------------------------------------------------------------------------------------------------
+
+## 📱  Capturas de pantalla en Android
+
+El archivo docs/screenshots.md ---> [Screenshots Android](screenshots.md)
+
+Contiene algunas screehshots generales de la app instalada en Android
+
+---------------------------------------------------------------------------------------------------------------
+
+## 👨‍💻 Autor
+
+Carlos Reyes Bustamante - Asistencia de Chat GPT (Chatcito)
+📧 <citizenlex2016@gmail.com>
 🌐 GitHub – clarito2021
 
 📜 Licencia
 
-Este proyecto se distribuye bajo la licencia MIT.
-Consulta el archivo LICENSE
- para más detalles.
+Este proyecto no es de libre distribución.

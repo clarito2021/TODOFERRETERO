@@ -271,6 +271,11 @@ class TakeOrderScreen(Screen):
         self.manager.current = "resumen_cliente"
 
     # ---------------------- NUEVO: Retomar orden ----------------------
+    # ---- Si la APP, se cerró repentinamente mientras se estaba incluyendo productos en la orden (código carrito.py) ----------------------
+    # ---- La app busca en la tabla order_drafts si hay algún registro que recuperar, de ser así, se habilita el botón ----------------------
+    # ---- Retomar Orden, y al hacer click en el, la APP, te lleva directamente al carrito.py para continuar de llenar esa orden pendiente ----------------------
+    # ---- Cuando se completa la orden en carrito.py, (se presiona el botón de completar orden), se borran todos los registros de la tabla order_drafts
+
 
     def _update_resume_button(self):
         """Muestra/oculta el botón 'Retomar orden' si existe borrador (order_drafts) para el usuario."""
@@ -326,7 +331,7 @@ class TakeOrderScreen(Screen):
             "from_draft": True,
         }
 
-        # Ir directo al carrito
+        # Ir directo al carrito si existe una orden pendiente en la tabla order_drafts en la base de datos todoferretero.db
         if self.manager:
             self.manager.transition = NoTransition()
             self.manager.current = "carrito"

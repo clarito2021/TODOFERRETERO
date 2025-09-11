@@ -16,10 +16,10 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.spinner import Spinner
 from kivy.app import App
 
-# ---- BD ----
+# ---- BD ---- Define en que path está la base de datos SQLite
 DB_PATH = Path("bd_sqlite/todoferre.db").expanduser().resolve()
 
-# Campos que traemos (puedes ampliar)
+# Campos que traemos (puedes ampliar), estos campos se llenan con la información que consultamos en la table clientes
 _FIELDS = [
     "direccion_completa",
     "terminos_de_pago_del_cliente",
@@ -33,7 +33,10 @@ _FIELDS = [
     "nombre_completo",
 ]
 
-# Regiones visibles cuando haya que elegir manualmente
+# Regiones visibles cuando haya que elegir manualmente - Estas regiones se despliegan si es que el cliente escogido no tiene dirección
+# Si el cliente no tiene dirección y escoge "Despacho", obligatoriamente, debe escoger una región, para que la lógica que tengamos
+# en carrito, pueda desplegar los precios, según la región, esto es, porque se puede tener un mismo SKU, con distintos precios dependiendo del campo "region"
+# que aparece en la tabla "listproduct_pricelist", esta lógica, es para la siguiente pantalla (código carrito.py) en donde se agregan productos para la orden
 REGIONES_PERMITIDAS = [
     "Chiloe (CL)", "Coquimbo (CL)", "de la Araucania (CL)", "de los Lagos (CL)",
     "del BíoBio (CL)", "del Libertador Gral. Bernardo O'Higgins (CL)",
@@ -55,6 +58,10 @@ def _ensure_order_tables():
       )
     """)
     con.commit(); con.close()
+
+#--- Aquí se comprueba si es que existé un registro en order_drafts
+#--- al momento de escribir este comentario, no recuerdo porqué puse este segmento acá
+#--- sin embargo, el código funciona sin problemas y al ejecutar las pruebas, el flujo requerido se completa
 
 def draft_exists(user: str, cliente_rowid: int) -> bool:
     _ensure_order_tables()
