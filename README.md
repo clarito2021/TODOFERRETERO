@@ -165,7 +165,7 @@ Ejemplo:
         ├── pdf_pedido.py               # Generación de PDFs
         ├── resumen_cliente.py          # Resumen de cliente
         ├── tomar_pedido.py             # Toma de pedidos
-        ├── tools/                      # Directorio con Scripts de análisis/diagramas
+        ├── tools/                      # Directorio con Scripts de análisis
         │   ├── generate_mermaid.py
         │   ├── generate_drawio.py
         │   └── analyze_sql.py
@@ -177,10 +177,10 @@ Ejemplo:
         │   ├── flow_resumen_cliente.drawio
         │   ├── flow_tomar_pedido.drawio
         │   ├── sql_insights.md
-        │   └── screenshots/            # subdirectorio con Capturas de pantalla generales
+        │   └── screenshots/            # subdirectorio con Capturas de pantalla
         ├── requirements-dev.txt        # Archivo .TXT con Dependencias
-        ├── buildozer.spec              # En este archivo, se dan la intrucciones para compilar el APK
-        └── main.py                     # Punto de entrada, archivo simple que llama a login.py
+        ├── buildozer.spec              # Intrucciones para compilar el APK
+        └── main.py                     # Archivo simple que llama a login.py
 
 ---------------------------------------------------------------------------------------------------------------
 
