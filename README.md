@@ -1,4 +1,8 @@
 <!-- markdownlint-disable-next-line MD041 -->
+<p align="center">
+  <img src="images/logo-cuadrado-ferretero.png">
+</p>
+
 # 🛠️ Proyecto TODOFERRETERO ANDROID
 
 # 📑 Índice
