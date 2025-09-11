@@ -64,9 +64,13 @@ en el Q.A:
 ## 🛠️ Tecnologías utilizadas
 
 -[Python 3.11.3](https://www.python.org/) (The official home of the Python Programming Language)
--[Kivy](https://kivy.org) (interfaz gráfica y navegación entre pantallas, MIT License)  
--[SQLite](https://sqlite.org/) (almacenamiento offline)  
--[ReportLab](https://www.reportlab.com) (generación de PDFs)  
+
+-[Kivy](https://kivy.org) (interfaz gráfica y navegación entre pantallas, MIT License)
+
+-[SQLite](https://sqlite.org/) (almacenamiento offline)
+
+-[ReportLab](https://www.reportlab.com) (generación de PDFs)
+
 -[Buildozer](https://buildozer.readthedocs.io/en/latest/) (compilación a APK para Android)
 
 - Es necesario usar un entorno virtual (`venv`):
