@@ -1,6 +1,6 @@
 # 🗃️ Consultas SQL – TODOFERRETERO
 
-![Esquema Base de Datos SQLite](docs/screenshots/diagrama_sql_lite.png)
+![Esquema Base de Datos SQLite](screenshots/diagrama_sql_lite.png)
 
 Este es un documento sencillo, que centraliza las consultas SQL en el código de la APP.
 

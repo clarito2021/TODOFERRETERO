@@ -48,11 +48,12 @@ En conjunto, este flujo evidencia cómo login conecta la interfaz de usuario, la
     2. La captura de credenciales del usuario
     3. La validación contra la base de datos.
     4. si la contraseña es inválida, se impide el acceso
-    5. Si existe una orden sin finalizar, al pasar exitosamente el login, se debe poder ver la opción de "Retomar Orden"
+    5. Si existe una orden sin finalizar, al pasar exitosamente el login,
+       se debe poder ver la opción de "Retomar Orden"
 
-[📂 Ver documento  >  "flow_login.drawio"](docs/flow_login.drawio)  
+[📂 Ver documento  >  "flow_login.drawio"](flow_login.drawio)  
 
-![Flujo Login](docs/screenshots/flow_login.drawio.png)  
+![Flujo Login](screenshots/flow_login.drawio.png)  
 
 ---
 
@@ -87,9 +88,9 @@ En conjunto, el diagrama ofrece una vista compacta de cómo tomar_pedido orquest
 
     - Se despliega un botón que permite cerrar la sesión y salir de la aplicación
 
-[📂 Ver documento  >  "flow_tomar_pedido.drawio"](docs/flow_tomar_pedido.drawio)  
+[📂 Ver documento  >  "flow_tomar_pedido.drawio"](flow_tomar_pedido.drawio)  
 
-![Flujo Tomar Pedido](docs/screenshots/flow_tomar_pedido.drawio.png)  
+![Flujo Tomar Pedido](screenshots/flow_tomar_pedido.drawio.png)  
 
 ---
 
@@ -139,9 +140,9 @@ En conjunto, este flujo muestra cómo resumen_cliente actúa como puente entre l
 
     - Se despliega un cuadro de “Notas:”, en donde el usuario ingresa texto
 
-[📂 Ver documento  >  "flow_resumen_cliente.drawio"](docs/low_resumen_cliente.drawio)  
+[📂 Ver documento  >  "flow_resumen_cliente.drawio"](low_resumen_cliente.drawio)  
 
-![Flujo Resumen Cliente](docs/screenshots/flow_resumen_cliente.drawio.png)  
+![Flujo Resumen Cliente](screenshots/flow_resumen_cliente.drawio.png)  
 
 ---
 
@@ -167,8 +168,8 @@ El diagrama también incorpora las operaciones SQL sobre todoferre.db, principal
          "fecha y hora"
     - Debe existir un botón que permita regresar a la pantalla previa (tomar_orden.py)
 
-[📂 Ver documento  >  draw.io](docs/flow_historial.drawio)  
-![Flujo Historial](docs/screenshots/flow_historial.drawio.png)  
+[📂 Ver documento  >  draw.io](flow_historial.drawio)  
+![Flujo Historial](screenshots/flow_historial.drawio.png)  
 
 ---
 
@@ -213,11 +214,29 @@ En conjunto, el diagrama muestra cómo carrito orquesta eventos de interfaz, reg
 
 ***Los casos de uso considerados en esta pantalla, son:***
 
-    - sdfsdfsgdsfg
-    - dfsdfgsdfgsdfgsdfgsdfg
+    - Se deben desplegar la información de región (influye en la lista de precios)
+    - Se debe desplegar el nombre del cliente (se trae de "resumen_cliente.py)
+    - Se debe desplegar un cuadro de busqueda dinámica
+    - Se puede hacer una busqueda por sku o nombre de productoi
+    - Los resultados de busqueda son dinámicos en el despliegue
+    - Al desplegarse los resultados, a estos se les puede hacer clic
+    - Al hacer clic en el resultado, este se agrega automaticamente al carrito
+    - Cuando el producto está en el carrito, se puede sumar, restar o eliminar
+    - Si se hace clic varias veces en el resultado de busqueda, se agregan productos = clic
+    - Cuando se agregan productos, las cantidades de "Subtotal" cambian
+    - Cuando se agregan productos, las cantidades de "Total" cambian
+    - La cantidad "Total" está sujeta a IVA (19%)
+    - Mientras se está haciendo la orden, se escribe un registro en la tabla "order_drafts"
+    - Si se cierra la app, los datos de "order_drafts", retoman la sesión
+    - Una vez que se presiona "Finalizar Orden", se borran los datos de "order_drafts"
+    - Una vez que se presiona "Finalizar Orden", se redirige al usuario a la pantalla para buscar cliente
+    - El finalizar la orden, se genera un numero de orden que se compone de (nombre de usuario + num ramdom(5))
+    - Al finalizar la orden, debe quedar un registro que se vea en "Historial" (se escribe en tabla "orders")
+    - Se debe desplegar un boton "Volver"
+    - El botón "Volver", lleva al usuario a la pantalla "Resumen Cliente"
 
-[📂 Ver documento > flow_carrito.drawio](docs/flow_carrito.drawio)  
-![Flujo Carrito](docs/screenshots/flow_carrito.drawio.png)  
+[📂 Ver documento > flow_carrito.drawio](flow_carrito.drawio)  
+![Flujo Carrito](screenshots/flow_carrito.drawio.png)  
 
 ---
 
@@ -236,10 +255,28 @@ En conjunto, este flujo deja en evidencia cómo pdf_pedido funciona como un mód
 
 ***Los casos de uso considerados en esta pantalla, son:***
 
-    - sdfsdfsgdsfg
-    - dfsdfgsdfgsdfgsdfgsdfg
+    - Generar PDF no es una página, es una funcionalidad que se muestra como botón
+    - El botón de "Imprimir PDF", se muestra en la pagina de "Historial"
+    - En Android, al generar el PDF, se abre con la app para PDF. que funcione en el dispositivo
+    - Se usa una app random, ya que se evita que el usuario deba buscar donde queda el PDF al ser generado
+    - Para la primera compilación para Android, se deshabilitó la generación del PDF
+    - Los datos de la generación de PDF se leen desde "orders"
+    - El PDF que se genera, tiene el logo "todoferretero" en el costado superior izquierdo
+    - El PDF tiene el titulo de "Pedido" en el costado superior derecho
+    - El PDF tiene la fecha y hora de cuando fue generado el pedido
+    - El PDF tiene un numero de orden que se genera aleatoreamente usando el nombre del usuario y un numero random
+    - El PDF informa quien realizó la orden tras el texto "Realizado por:"
+    - El PDF incluye texto "Señor(es):" nombre del cliente 
+    - El PDF incluye "Dirección:", dirección cliente tabla "orders"
+    - El PDF incluye "Forma de Pago:", forma de pago tabla "orders"
+    - El PDF incluye "Dirección de Despacho:", dirección de tabla "orders"
+    - EL PDF muestra la info de "Lista de Precios:", "region" desde tabla "orders"
+    - El PDF muestra "RUT:", de la tabla "orders"
+    - El PDF muestra "Comuna:", despliega la comuna desde la tabla "orders"
+    - El PDF muestra "Ciudad", despliega la info de la tabla "orders"
+    - El PDF muestra "Email:", despliega la imfo de la tabla "orders"
 
-[📂 Ver documento > flow_pdf_pedido.drawio](docs/flow_pdf_pedido.drawio)  
-![Flujo PDF Pedido](docs/screenshots/flow_pdf_pedido.drawio.png)  
+[📂 Ver documento > flow_pdf_pedido.drawio](flow_pdf_pedido.drawio)  
+![Flujo PDF Pedido](screenshots/flow_pdf_pedido.drawio.png)  
 
 ---

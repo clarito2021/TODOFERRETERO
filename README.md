@@ -35,9 +35,12 @@
 - Selección de precios (los precios son distintos dada la región), según **Criterio de Despacho**
 - **Historial de pedidos** con búsqueda por "nombre", "RUT" o "número de orden".
 - Carro de Compras (selector de productos para orden) con **Sesión Persistente**
+- Validaciones ogligatorias para datos **Región** para configurar el "Despacho"
+- Si el usuario no tiene dirección y escoge despacho, debe seleccionar una **region**
 - Si no se completa la orden, **se mantiene una respaldo de la sesión de compras puede retomarse**
 - Se se completa la orden, se eliminan los registros de sesiones incomopletas
 - Generación de PDFs de pedidos (con **ReportLab**)
+- Los PDF se muestran usando la app que tenga instalada el teléfono o tablet
 - Orientación fija en **Portrait** en Android.  
 - Compatible con **Scoped Storage** (Android 11+)
 
@@ -58,6 +61,12 @@ en el Q.A:
 - Sincronización de la tabla "orders" con un servicio On Line (Odoo)
 - Actualización de las tablas "cliente", "usuarios", "pricelist", "products", desde servicio On Line (Odoo)
 - Ajustes estéticos, dada la urgencia con la que se planteó el proyecto, se centró el desarrollo primero en funcionalidad
+- No se llegó a tratar la calidad de los datos
+- Se descubre que hay datos de cliente, no están completos
+- La app, permite que haya datos vacios, como email
+- Quedó pendiente, hacer una versión para Iphone, se priorizó Android
+- No se hizo un Q.A Estricto
+- Se detectaron errores en la primera compilación, que no se depuraron.
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -186,7 +195,7 @@ en el Q.A:
 
 ## 📊 Diagramas de Flujo
 
-El el siguiente link, se puede acceder a todos los diagramas ---> [Diagramas de Flujo](FLOW_DOCS.md)
+El el siguiente link, se puede acceder a todos los diagramas ---> [Diagramas de Flujo](docs/FLOW_DOCS.md)
 
 Ahí se ven los diagramas .drawio, png y una explicación de lo que hace cada módulo:
 
@@ -201,7 +210,7 @@ Ahí se ven los diagramas .drawio, png y una explicación de lo que hace cada m�
 
 ## 🛢️ Consultas SQL
 
-El archivo docs/sql_insights.md ---> [Consultas SQL](SQL_DOCS.md)
+El archivo docs/sql_insights.md ---> [Consultas SQL](docs/SQL_DOCS.md)
 
 Contiene el detalle de todas las consultas SQL que se hacen en el código de la app, incluyendo:
 
@@ -219,7 +228,7 @@ Contiene el detalle de todas las consultas SQL que se hacen en el código de la 
 
 ## 📱  Capturas de pantalla en Android
 
-El archivo docs/screenshots.md ---> [Screenshots Android](screenshots.md)
+El archivo docs/screenshots.md ---> [Screenshots Android](docs/screenshots.md)
 
 Contiene algunas screehshots generales de la app instalada en Android
 
