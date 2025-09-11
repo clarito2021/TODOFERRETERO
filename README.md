@@ -246,7 +246,7 @@ Contiene el detalle de todas las consultas SQL que se hacen en el código de la 
 
 # 📥 Descarga versión en desarrollo
 
-- [⬇️ Descargar APK](bin/todoferretero-0.1.0-arm64-v8a_armeabi-v7a-debug.apk)
+- [⬇️ Descargar APK](https://github.com/clarito2021/TODOFERRETERO/raw/main/bin/todoferretero-0.1.0-arm64-v8a_armeabi-v7a-debug.apk)
 - [📝 Notas de la versión v0.1.0](docs/release-notes-v0.1.0.md)
 
 # 📱 Capturas de pantalla en Android y 🎥 Videos de la aplicación

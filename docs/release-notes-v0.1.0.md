@@ -6,7 +6,7 @@ Esta build está orientada a pruebas iniciales en Android.
 ---
 
 ## 📦 Archivo descargable
-- **APK**: [`todoferretero-0.1.0-arm64-v8a_armeabi-v7a-debug.apk`](../bin/todoferretero-0.1.0-arm64-v8a_armeabi-v7a-debug.apk)
+- [⬇️ Descargar APK](https://github.com/clarito2021/TODOFERRETERO/raw/main/bin/todoferretero-0.1.0-arm64-v8a_armeabi-v7a-debug.apk)
 
 ---
 
