@@ -49,7 +49,7 @@ captures/
 .cxx/
 
 # ---- Bases de datos ----
-*.db
+.db
 *.sqlite3
 
 # ---- Archivos de configuración privada ----

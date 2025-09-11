@@ -3,15 +3,16 @@
 
 # 🛠️ Proyecto TODOFERRETERO ANDROID
 
-📌 Información General
-    - **Fecha de inicio generación de código**: 01/10/2025 13:30 hrs
-    - **Fecha de término**: 05/10/2025 14:00 hrs  
-    - **Lenguaje de programación**: Python 3.11.3  (.venv)
-    - **Editor utilizado**: Visual Studio Code  
-    - **Sistema operativo de desarrollo**: MacOS Sequoia 15.6.1 (con soporte para Linux/Windows)  
-    - **Base de datos**: SQLite (`todoferre.db`)  
-    - **Herramientas utilizadas**: DBeaver, CLI `sqlite3`  
-    - **Cantidad de archivos de código**: 7 archivos .py
+## 📌 Información General
+
+- **Fecha de inicio generación de código**: 01/10/2025 13:30 hrs
+- **Fecha de término**: 05/10/2025 14:00 hrs
+- **Lenguaje de programación**: Python 3.11.3  (.venv)
+- **Editor utilizado**: Visual Studio Code
+- **Sistema operativo de desarrollo**: MacOS Sequoia 15.6.1 (con soporte para Linux/Windows)
+- **Base de datos**: SQLite (`todoferre.db`)
+- **Herramientas utilizadas**: DBeaver, CLI `sqlite3`
+- **Cantidad de archivos de código**: 7 archivos .py
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -226,11 +227,20 @@ Contiene el detalle de todas las consultas SQL que se hacen en el código de la 
 
 ---------------------------------------------------------------------------------------------------------------
 
-## 📱  Capturas de pantalla en Android
+## 📥 Descarga versión en desarrollo
 
-El archivo docs/screenshots.md ---> [Screenshots Android](docs/screenshots.md)
+- [⬇️ Descargar APK](bin/todoferretero-0.1.0-arm64-v8a_armeabi-v7a-debug.apk)
+- [📝 Notas de la versión v0.1.0](docs/release-notes-v0.1.0.md)
+
+## 📱  Capturas de pantalla en Android y 🎥 Videos de la aplicación
+
+El archivo docs/screenshots.md ---> 📱 [Screenshots Android](docs/screenshots.md)
 
 Contiene algunas screehshots generales de la app instalada en Android
+
+El archivo docs/videos.md ---> 🎥 [Demo de TODOFERRETERO en Android](docs/videos.md)
+
+Contiene un video de la aplicación funcionando en un dispositvo Android
 
 ---------------------------------------------------------------------------------------------------------------
 
