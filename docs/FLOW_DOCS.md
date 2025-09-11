@@ -1,11 +1,17 @@
 # 📊 Diagramas de Flujo – TODOFERRETERO
 
-Este documento, contiene diagramas que representan un grafo (generado en **ddraw.io** y exportado a .PNG) de dependencias de cada uno de los módulos analizados. Cada nodo corresponde a una función o método definido en el código fuente y se organiza dentro de un swimlane por módulo.
+Este documento, contiene diagramas que representan un grafo, generado en **ddraw.io** (está disponible el archivo editable ".draw.io") y exportado a .PNG de dependencias de cada uno de los módulos analizados. Cada nodo corresponde a una función o método definido en el código fuente y se organiza dentro de un swimlane por módulo.
 
-El contenido se presenta en este orden:
+Indice de flujos presentados en este documento:
 
--Link al archivo draw.io
--Se muestra el .png exportado desde el archivo draw.io
+- [🔑 Login (login.py)](#-login---loginpy)
+- [📦 Tomar Pedido (tomar_pedido.py)](#-tomar-pedido---tomar_pedidopy)
+- [👤 Resumen Cliente (resumen_cliente.py)](#-resumen-cliente---resumen_clientepy)
+- [📜 Historial (historial.py)](#-historial---historialpy)
+- [🛒 Carrito (carrito.py)](#-carrito---carritopy)
+- [📝 PDF Pedido (pdf_pedido.py)](#-pdf-pedido---pdf_pedidopy)
+
+---
 
     Simbología de los flujos:
 
@@ -18,18 +24,9 @@ Además, se incluyen las fuentes de datos detectadas (como bases de datos SQLite
 
 También se identifican eventos de interfaz (ej. on_release, bind en Kivy) que actúan como disparadores entre componentes. De esta manera, el diagrama proporciona una visión general de cómo las funciones del módulo interactúan entre sí, con otros archivos .py y con las fuentes de datos externas.
 
-Los archivos ".py" contenidos en este segmento de la documentación, son:
-
-    - login.py
-    - tomar_pedido.py
-    - resumen_cliente.py
-    - carrito.py
-    - historial.py
-    - pdf_pedido.py
-
 ---
 
-## 🔑 Login - (login.py)
+# 🔑 Login - (login.py)
 
 ***Descripción:***
 Este diagrama muestra el flujo de autenticación implementado en el módulo login (login.py).
@@ -44,12 +41,12 @@ En conjunto, este flujo evidencia cómo login conecta la interfaz de usuario, la
 
 ***Los casos de uso considerados en esta pantalla, son:***
 
-    1. La carga de la pantalla de acceso
-    2. La captura de credenciales del usuario
-    3. La validación contra la base de datos.
-    4. si la contraseña es inválida, se impide el acceso
-    5. Si existe una orden sin finalizar, al pasar exitosamente el login,
-       se debe poder ver la opción de "Retomar Orden"
+    -La carga de la pantalla de acceso
+    -La captura de credenciales del usuario
+    -La validación contra la base de datos.
+    -si la contraseña es inválida, se impide el acceso
+    -Si existe una orden sin finalizar, al pasar exitosamente el login,
+    -Se debe poder ver la opción de "Retomar Orden"
 
 [📂 Ver documento  >  "flow_login.drawio"](flow_login.drawio)  
 
@@ -57,7 +54,7 @@ En conjunto, este flujo evidencia cómo login conecta la interfaz de usuario, la
 
 ---
 
-## 📦 Tomar Pedido - (tomar_pedido.py)
+# 📦 Tomar Pedido - (tomar_pedido.py)
 
 ***Descripción:***
 Este diagrama describe el flujo de toma de pedido del módulo tomar_pedido. Los nodos representan sus métodos y handlers de interfaz (p. ej., inicialización de pantalla, capturas de entrada y validaciones), mientras que las aristas sólidas muestran la secuencia interna entre pasos como preparar el formulario, validar campos y construir el objeto de pedido.
@@ -94,7 +91,7 @@ En conjunto, el diagrama ofrece una vista compacta de cómo tomar_pedido orquest
 
 ---
 
-## 👤 Resumen Cliente - (resumen_cliente.py)
+# 👤 Resumen Cliente - (resumen_cliente.py)
 
 ***Descripción:***
 Este diagrama representa el flujo de selección y confirmación de cliente en el módulo resumen_cliente.
@@ -146,7 +143,7 @@ En conjunto, este flujo muestra cómo resumen_cliente actúa como puente entre l
 
 ---
 
-## 📜 Historial - (historial.py)
+# 📜 Historial - (historial.py)
 
 ***Descripción:***
 Este diagrama representa el flujo de consulta y gestión del historial de pedidos en el módulo historial.
@@ -173,7 +170,7 @@ El diagrama también incorpora las operaciones SQL sobre todoferre.db, principal
 
 ---
 
-## 🛒 Carrito - (carrito.py)
+# 🛒 Carrito - (carrito.py)
 
 ***Descripción:***
 Este diagrama detalla el flujo de armado y mantenimiento del carrito en el módulo carrito.
@@ -240,7 +237,7 @@ En conjunto, el diagrama muestra cómo carrito orquesta eventos de interfaz, reg
 
 ---
 
-## 📝 PDF Pedido - (pdf_pedido.py)
+# 📝 PDF Pedido - (pdf_pedido.py)
 
 ***Descripción:***
 Este diagrama describe el flujo de generación de documentos PDF en el módulo pdf_pedido.
