@@ -47,16 +47,10 @@ Se probaron los casos de uso básicos, no se ejecutó un proceso profundo de Q.A
 la última compilación, se le informó a los solicitantes, este gran detalle, por lo tanto, 
 si alguien retoma este proyecto debe considerar este proceso, puesto que hay tres etapas en el Q.A:
 
-    1. Q.A implícito en el desarrollo
-    2. Q.A ejecutado por un especialista en Q.A que prueba los casos de uso generales y los expande
-    3. UAT, User Acceptance Test, ejecutado por un usuario final supervisado por un especialista Q.A
+1. Q.A implícito en el desarrollo
+2. Q.A ejecutado por un especialista en Q.A que prueba los casos de uso generales y los expande
+3. UAT, User Acceptance Test, ejecutado por un usuario final supervisado por un especialista Q.A
 ````
-
-📸 Capturas de pantalla
-
-(agrega aquí tus imágenes en el repositorio, por ejemplo en /images/screenshots/ y enlázalas con markdown)
-
-Ejemplo:
 
 ## 🚀 Funcionalidades NO Desarrolladas por cancelación del Proyecto
 
