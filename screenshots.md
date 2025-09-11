@@ -5,6 +5,7 @@ A continuación, se muestran algunas vistas de la aplicación TODOFERRETERO en f
 ### Pantalla de Instalación
 
 *Instalación de la APP en Android*
+
 ![Pantalla Instalación](docs/screenshots/insta00.jpg)
 ![Pantalla Instalación](docs/screenshots/insta01.jpg)
 ![Pantalla Instalación](docs/screenshots/insta02.jpg)
