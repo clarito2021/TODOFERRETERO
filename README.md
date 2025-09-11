@@ -37,19 +37,20 @@
 - Carro de Compras (selector de productos para orden) con **Sesión Persistente**
 - Si no se completa la orden, **se mantiene una respaldo de la sesión de compras puede retomarse**
 - Se se completa la orden, se eliminan los registros de sesiones incomopletas
-- Generación de PDFs de pedidos (con **ReportLab**).
+- Generación de PDFs de pedidos (con **ReportLab**)
 - Orientación fija en **Portrait** en Android.  
-- Compatible con **Scoped Storage** (Android 11+).
+- Compatible con **Scoped Storage** (Android 11+)
 
 ````
 Notas del Desarrollo: 
 Se probaron los casos de uso básicos, no se ejecutó un proceso profundo de Q.A, al entregar
 la última compilación, se le informó a los solicitantes, este gran detalle, por lo tanto, 
-si alguien retoma este proyecto debe considerar este proceso, puesto que hay tres etapas en el Q.A:
+si alguien retoma este proyecto debe considerar este proceso, puesto que hay tres etapas 
+en el Q.A:
 
 1. Q.A implícito en el desarrollo
-2. Q.A ejecutado por un especialista en Q.A que prueba los casos de uso generales y los expande
-3. UAT, User Acceptance Test, ejecutado por un usuario final supervisado por un especialista Q.A
+2. Q.A ejecutado por un especialista en Q.A casos de uso generales + expansión
+3. UAT, User Acceptance Test, ejecutado usuario + Especialista Q.A
 ````
 
 ## 🚀 Funcionalidades NO Desarrolladas por cancelación del Proyecto
