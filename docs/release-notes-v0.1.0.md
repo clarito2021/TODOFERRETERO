@@ -19,14 +19,14 @@ Esta build está orientada a pruebas iniciales en Android.
     - Generación de identificadores para numero de serie  
     - Toma de pedidos offline.  
     - criterio de precios por región obligatorio, el usuario no puede avanzar
-    - si se escoge "retiro" precios de Santiago RM
-    - si se esgoe "regiro" y la region es Santiago, precios de Santiago
-    - si se escoge "retiro" y la región es distinta a STGO, precios de Santiago
-    - si se escoge despacho y la regioń es <> SGTO, precios de región en tabla clientes
-    - si el cliente no tiene "region" y escoge despacho, se se debe escoger region
-    - Busqueda de productos dinámica por nombre o sku
-    - Carrito de compras con totales.
-    - Historial de pedidos.  
+    - Si se escoge "retiro" precios de Santiago RM
+    - Si se esgoge "regiro" y la region es Santiago, precios de Santiago
+    - Si se escoge "retiro" y la región es distinta a STGO, precios de Santiago
+    - Si se escoge despacho y la regioń es <> SGTO, precios de región en tabla clientes
+    - Si el cliente no tiene "region" y escoge despacho, se se debe escoger region
+    - Búsqueda de productos dinámica por nombre o sku
+    - Carrito de compras con totales que se actualizan.
+    - Historial de pedidos generados luego de "Finalizar Orden".  
     - Generación de PDF de pedidos.
     - La persistencia de ordenes sin terminar funciona
     - La persistencia solo mantiene una sesión guardada

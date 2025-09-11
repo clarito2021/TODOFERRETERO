@@ -55,3 +55,7 @@ captures/
 # ---- Archivos de configuración privada ----
 *.env
 *.secret
+
+
+# Configuración local de VSCode
+.vscode/

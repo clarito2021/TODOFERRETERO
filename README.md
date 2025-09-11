@@ -3,7 +3,39 @@
 
 # 🛠️ Proyecto TODOFERRETERO ANDROID
 
-## 📌 Información General
+# 📑 Índice
+
+- [📌 Información General](#-información-general)
+- [🛠️  Solicitudes Generales](#️--solicitudes-generales)
+- [🚀 Funcionalidades Desarrolladas y probadas](#-funcionalidades-desarrolladas-y-probadas)
+- [🚀 Funcionalidades NO Desarrolladas por cancelación del Proyecto](#-funcionalidades-no-desarrolladas-por-cancelación-del-proyecto)
+- [🛠️ Tecnologías utilizadas](#️-tecnologías-utilizadas)
+- [⚙️ Manual de Compilación y Ejecución](#️-manual-de-compilación-y-ejecución)
+- [📂 Estructura del proyecto](#-estructura-del-proyecto)
+- [📊 Diagramas de Flujo](#-diagramas-de-flujo)
+- [🛢️ Consultas SQL](#️-consultas-sql)
+- [📥 Descarga versión en desarrollo](#-descarga-versión-en-desarrollo)
+- [📱 Capturas de pantalla en Android y 🎥 Videos de la aplicación](#-capturas-de-pantalla-en-android-y--videos-de-la-aplicación)
+- [👨‍💻 Autor](#-autor)
+
+<!-- /code_chunk_output -->
+
+- [🛠️ Proyecto TODOFERRETERO ANDROID](#️-proyecto-todoferretero-android)
+- [📑 Índice](#-índice)
+- [📌 Información General](#-información-general)
+- [🛠️  Solicitudes Generales](#️--solicitudes-generales)
+- [🚀 Funcionalidades Desarrolladas y probadas](#-funcionalidades-desarrolladas-y-probadas)
+- [🚀 Funcionalidades NO Desarrolladas por cancelación del Proyecto](#-funcionalidades-no-desarrolladas-por-cancelación-del-proyecto)
+- [🛠️ Tecnologías utilizadas](#️-tecnologías-utilizadas)
+- [⚙️ Manual de Compilación y Ejecución](#️-manual-de-compilación-y-ejecución)
+- [📂 Estructura del proyecto](#-estructura-del-proyecto)
+- [📊 Diagramas de Flujo](#-diagramas-de-flujo)
+- [🛢️ Consultas SQL](#️-consultas-sql)
+- [📥 Descarga versión en desarrollo](#-descarga-versión-en-desarrollo)
+- [📱 Capturas de pantalla en Android y 🎥 Videos de la aplicación](#-capturas-de-pantalla-en-android-y--videos-de-la-aplicación)
+- [👨‍💻 Autor](#-autor)
+
+# 📌 Información General
 
 - **Fecha de inicio generación de código**: 01/10/2025 13:30 hrs
 - **Fecha de término**: 05/10/2025 14:00 hrs
@@ -16,7 +48,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
-## 🛠️  Solicitudes Generales
+# 🛠️  Solicitudes Generales
 
 - Aplicación móvil para la toma de pedidos **offline**
 - La app debe trabajar con una base de datos **SQLite**
@@ -28,7 +60,7 @@
 
 ---------------------------------------------------------------------------------------------------------------
 
-## 🚀 Funcionalidades Desarrolladas y probadas
+# 🚀 Funcionalidades Desarrolladas y probadas
 
 - Login seguro con usuarios desde SQLite.
 - Toma de pedidos **offline** asociados a clientes.  
@@ -57,7 +89,7 @@ en el Q.A:
 3. UAT, User Acceptance Test, ejecutado usuario + Especialista Q.A
 ````
 
-## 🚀 Funcionalidades NO Desarrolladas por cancelación del Proyecto
+# 🚀 Funcionalidades NO Desarrolladas por cancelación del Proyecto
 
 - Sincronización de la tabla "orders" con un servicio On Line (Odoo)
 - Actualización de las tablas "cliente", "usuarios", "pricelist", "products", desde servicio On Line (Odoo)
@@ -71,7 +103,7 @@ en el Q.A:
 
 ---------------------------------------------------------------------------------------------------------------
 
-## 🛠️ Tecnologías utilizadas
+# 🛠️ Tecnologías utilizadas
 
 -[Python 3.11.3](https://www.python.org/) (The official home of the Python Programming Language)
 
@@ -99,7 +131,7 @@ en el Q.A:
 
 ---------------------------------------------------------------------------------------------------------------
 
-## ⚙️ Manual de Compilación y Ejecución
+# ⚙️ Manual de Compilación y Ejecución
 
 1. Clonar repositorio
 
@@ -164,7 +196,7 @@ en el Q.A:
 
 ---------------------------------------------------------------------------------------------------------------
 
-## 📂 Estructura del proyecto
+# 📂 Estructura del proyecto
 
         TODOFERRETERO/
         ├── images/                     # Directorio con Logo y recursos gráficos
@@ -194,7 +226,7 @@ en el Q.A:
 
 ---------------------------------------------------------------------------------------------------------------
 
-## 📊 Diagramas de Flujo
+# 📊 Diagramas de Flujo
 
 El el siguiente link, se puede acceder a todos los diagramas ---> [Diagramas de Flujo](docs/FLOW_DOCS.md)
 
@@ -209,7 +241,7 @@ Ahí se ven los diagramas .drawio, png y una explicación de lo que hace cada m�
 
 ---------------------------------------------------------------------------------------------------------------
 
-## 🛢️ Consultas SQL
+# 🛢️ Consultas SQL
 
 El archivo docs/sql_insights.md ---> [Consultas SQL](docs/SQL_DOCS.md)
 
@@ -227,12 +259,12 @@ Contiene el detalle de todas las consultas SQL que se hacen en el código de la 
 
 ---------------------------------------------------------------------------------------------------------------
 
-## 📥 Descarga versión en desarrollo
+# 📥 Descarga versión en desarrollo
 
 - [⬇️ Descargar APK](bin/todoferretero-0.1.0-arm64-v8a_armeabi-v7a-debug.apk)
 - [📝 Notas de la versión v0.1.0](docs/release-notes-v0.1.0.md)
 
-## 📱  Capturas de pantalla en Android y 🎥 Videos de la aplicación
+# 📱 Capturas de pantalla en Android y 🎥 Videos de la aplicación
 
 El archivo docs/screenshots.md ---> 📱 [Screenshots Android](docs/screenshots.md)
 
@@ -244,7 +276,7 @@ Contiene un video de la aplicación funcionando en un dispositvo Android
 
 ---------------------------------------------------------------------------------------------------------------
 
-## 👨‍💻 Autor
+# 👨‍💻 Autor
 
 Carlos Reyes Bustamante - Asistencia de Chat GPT (Chatcito)
 
