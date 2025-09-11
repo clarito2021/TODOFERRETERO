@@ -18,23 +18,6 @@
 - [📱 Capturas de pantalla en Android y 🎥 Videos de la aplicación](#-capturas-de-pantalla-en-android-y--videos-de-la-aplicación)
 - [👨‍💻 Autor](#-autor)
 
-<!-- /code_chunk_output -->
-
-- [🛠️ Proyecto TODOFERRETERO ANDROID](#️-proyecto-todoferretero-android)
-- [📑 Índice](#-índice)
-- [📌 Información General](#-información-general)
-- [🛠️  Solicitudes Generales](#️--solicitudes-generales)
-- [🚀 Funcionalidades Desarrolladas y probadas](#-funcionalidades-desarrolladas-y-probadas)
-- [🚀 Funcionalidades NO Desarrolladas por cancelación del Proyecto](#-funcionalidades-no-desarrolladas-por-cancelación-del-proyecto)
-- [🛠️ Tecnologías utilizadas](#️-tecnologías-utilizadas)
-- [⚙️ Manual de Compilación y Ejecución](#️-manual-de-compilación-y-ejecución)
-- [📂 Estructura del proyecto](#-estructura-del-proyecto)
-- [📊 Diagramas de Flujo](#-diagramas-de-flujo)
-- [🛢️ Consultas SQL](#️-consultas-sql)
-- [📥 Descarga versión en desarrollo](#-descarga-versión-en-desarrollo)
-- [📱 Capturas de pantalla en Android y 🎥 Videos de la aplicación](#-capturas-de-pantalla-en-android-y--videos-de-la-aplicación)
-- [👨‍💻 Autor](#-autor)
-
 # 📌 Información General
 
 - **Fecha de inicio generación de código**: 01/10/2025 13:30 hrs
